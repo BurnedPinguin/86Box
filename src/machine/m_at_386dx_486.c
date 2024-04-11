@@ -915,7 +915,6 @@ machine_at_pci400ca_init(const machine_t *model)
     pci_register_slot(0x02, PCI_CARD_SOUTHBRIDGE, 0, 0, 0, 0);
     device_add(&keyboard_ps2_ami_device);
     device_add(&sio_device);
-    device_add(&intel_flash_bxt_ami_device);
 
     device_add(&i420tx_device);
     device_add(&ncr53c810_onboard_pci_device);
